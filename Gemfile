@@ -35,6 +35,7 @@ group :development, :test do
   gem 'launchy', '2.0.5'
   gem 'rspec-rails', '>= 2.6.1'
   gem 'webrat', '0.7.3'
+  gem 'heroku'
 
 end
 
