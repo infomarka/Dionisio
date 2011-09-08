@@ -1,5 +1,6 @@
 Dionisio::Application.routes.draw do
   root :to => 'application#index'
+  post '/email/create/' => 'lista_emails#create' , :as => 'create_email'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
