@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Dionisio</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+  <head>
+    <title>Dionisio</title>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <h1>Rio Curtição</h1>
+    <span  class="notice">
+    <%= notice if notice %> </span>
+    <span  class="alert">
+    <%=  alert if alert %> </span>
+    <%= yield %>
 
-<%= yield %>
-
-</body>
+  </body>
 </html>

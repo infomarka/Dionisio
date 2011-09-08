@@ -25,7 +25,18 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+group :development, :test do
+  gem 'ruby-debug19', :require => 'ruby-debug'
+  gem 'capybara' , '1.1.1'
+  gem 'database_cleaner', '0.6.7'
+  gem 'cucumber-rails', '1.0.2'
+  gem 'cucumber', '1.0.3'
+  #gem 'spork', '0.8.5'
+  gem 'launchy', '2.0.5'
+  gem 'rspec-rails', '>= 2.6.1'
+  gem 'webrat', '0.7.3'
+
+end
 
 group :test do
   # Pretty printed test output
