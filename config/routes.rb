@@ -1,4 +1,6 @@
 Dionisio::Application.routes.draw do
+  devise_for :users
+
   root :to => 'application#index'
   post '/email/create/' => 'lista_emails#create' , :as => 'create_email'
 

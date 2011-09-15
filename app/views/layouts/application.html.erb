@@ -12,7 +12,9 @@
     <%= notice if notice %> </span>
     <span  class="alert">
     <%=  alert if alert %> </span>
+    <%= link_to "cadastrar",new_user_registration_path  %>
     <%= yield %>
+
 
   </body>
 </html>

@@ -4,4 +4,5 @@ class ApplicationController < ActionController::Base
   def index
     @email = ListaEmail.new
   end
+
 end
