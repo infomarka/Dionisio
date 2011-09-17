@@ -14,6 +14,9 @@ module NavigationHelpers
 
     when /^página principal$/
       '/'
+
+    when /^página de cadastro$/
+      '/users/sign_up'
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

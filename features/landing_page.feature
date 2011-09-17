@@ -9,7 +9,7 @@ Funcionalidade: Landing Page
     Dado que eu estou na página principal
     Então eu devo ver "Rio Curtição"
 
-Cenário: Cadastrar email
+  Cenário: Cadastrar email
     Dado que eu estou na página principal
     E eu preencho "lista_email_email" com "fredericotavares@gmail.com"
     E eu aperto "Enviar"

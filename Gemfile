@@ -32,7 +32,7 @@ group :development, :test do
   gem 'database_cleaner', '0.6.7'
   gem 'cucumber-rails', '1.0.2'
   gem 'cucumber', '1.0.3'
-  #gem 'spork', '0.8.5'
+  gem 'spork', '0.8.5'
   gem 'launchy', '2.0.5'
   gem 'rspec-rails', '>= 2.6.1'
   gem 'webrat', '0.7.3'
