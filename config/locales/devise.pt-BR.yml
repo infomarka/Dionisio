@@ -1,4 +1,9 @@
 pt-BR:
+  activerecord:
+    attributes:
+      user:
+        password: "Senha"
+
   devise:
     confirmations:
       confirmed: "Sua conta foi confirmada com sucesso. Seja Bem vindo(a)!"
@@ -55,7 +60,7 @@ pt-BR:
       updated: "Sua senha foi alterada com sucesso."
     registrations:
       destroyed: "Sua conta foi cancelada com sucesso. Esperamos vê-lo novamente em breve."
-      signed_up: "Você se inscreveu com êxito. Se habilitado, a confirmação foi enviada para seu e-mail."
+      signed_up: "Você foi cadastrado com sucesso."
       updated: "Você atualizou a sua conta com sucesso."
     sessions:
       new:
@@ -90,3 +95,4 @@ pt-BR:
       already_confirmed: "já foi confirmado"
       not_found: "não encontrado"
       not_locked: "não foi bloqueado"
+      not_saved: "O usuário não foi salvo"

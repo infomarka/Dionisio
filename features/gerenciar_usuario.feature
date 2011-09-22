@@ -21,3 +21,4 @@ Funcionalidade: Gerenciar Usuário
     E eu preencho "user_password_confirmation" com "familharestart"
     Então eu aperto "Cadastrar"
     E eu devo estar na página principal
+    E eu devo ver "Você foi cadastrado com sucesso."
