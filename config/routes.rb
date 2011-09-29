@@ -1,5 +1,8 @@
 Dionisio::Application.routes.draw do
-  devise_for :users
+  devise_for :users do
+    get "/logout" => "devise/sessions#destroy", :as => 'logout'
+  end
+
 
   root :to => 'application#index'
   post '/email/create/' => 'lista_emails#create' , :as => 'create_email'

@@ -1,0 +1,26 @@
+pt-BR:
+  activerecord:
+    models:
+      user: Usuário
+    attributes:
+      user:
+        email: Email
+        nome: Nome
+        current_password: Senha atual
+        password: Senha
+        password_confirmation: Confirmação de Senha
+        data_nascimento: Data de nascimento
+    errors:
+      models:
+        user:
+          attributes:
+            current_password:
+              blank: não pode ficar em branco.
+            email:
+              blank: não pode ficar em branco.
+            nome:
+              blank: não pode ficar em branco.
+            password:
+              blank: não pode ficar em branco.
+            data_nascimento:
+              menor: inválida. Você é menor de idade!

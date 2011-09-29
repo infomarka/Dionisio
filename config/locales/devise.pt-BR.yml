@@ -5,12 +5,18 @@ pt-BR:
         password: "Senha"
 
   devise:
+    resend: Reenviar instruções de confirmação
+    sign_in: Login
+    sign_out: Logout
+    sign_up: Cadastrar
+
     confirmations:
       confirmed: "Sua conta foi confirmada com sucesso. Seja Bem vindo(a)!"
       new:
         resend_confirmation: "Reenviar as instruções de confirmação."
       send_instructions: "Você receberá um email em poucos minutos com as instruções sobre como confirmar a sua conta."
     failure:
+      already_authenticated: "Você já está logado."
       inactive: "Sua conta ainda não foi ativada."
       invalid: "Email ou senha inválidos."
       invalid_token: "Token de autenticação inválido."

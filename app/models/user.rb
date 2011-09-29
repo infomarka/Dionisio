@@ -11,6 +11,6 @@ class User < ActiveRecord::Base
   validate :validar_idade
 
   def validar_idade
-    errors.add(:data_nascimento, 'Você é menor de idade!') if Date.today - 18.years < self.data_nascimento.to_date
+    errors.add(:data_nascimento, :menor) if Date.today - 18.years < self.data_nascimento.to_date
   end
 end

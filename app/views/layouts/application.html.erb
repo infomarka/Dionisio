@@ -7,13 +7,27 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <h1>Rio Curtição</h1>
-    <span  class="notice">
-    <%= notice if notice %> </span>
-    <span  class="alert">
-    <%=  alert if alert %> </span>
-    <%= link_to "cadastrar",new_user_registration_path  %>
-    <%= yield %>
+    <div class="content">
+      <div class="header">
+        <h1>Rio Curtição</h1>
+        <span  class="notice">
+          <%= notice if notice %> </span>
+        <span  class="alert">
+          <%=  alert if alert %> </span>
+        <% if !user_signed_in?  %>
+          <%= link_to t("devise.sign_up"),new_user_registration_path  %>
+          <%= link_to t("devise.sign_in"), new_user_session_path  %>
+        <%else%>
+          <%= link_to t("devise.sign_out"),logout_path  %>
+        <%end%>
+      </div>
+      <div class="main">
+        <%= yield %>
+      </div>
+      <div class="footer">
+        2011
+      </div>
+    </div>
 
 
   </body>
