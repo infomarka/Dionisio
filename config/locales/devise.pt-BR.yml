@@ -9,6 +9,23 @@ pt-BR:
     sign_in: Login
     sign_out: Logout
     sign_up: Cadastrar
+    confirm_my_account: Confirme sua conta
+    change_my_password: Altere sua senha
+    unlock_my_account: Desbloqueie sua conta
+    new_password: Nova senha
+    confirm_new_password: Confirme sua nova senha
+    change_my_password: Mude sua senha
+    send_me_reset_password_instructions: Enviar instruções sobre alteração de senha
+    update: Atualizar
+    cancel_my_account: Cancelar minha conta
+    are_you_sure?: Você tem certeza?
+    back: Voltar
+    send: Enviar
+    forgot_your_password?: Esqueceu sua senha?
+    did_not_receive_confirmation_instructions?: Não recebeu instruções de confirmação?
+    did_not_receive_unlock_instructions?: Não recebeu instruções de desbloqueio?
+    sign_in_with: Logar com
+    resend_unlock_instructions: Reenviar instruções de desbloqueio
 
     confirmations:
       confirmed: "Sua conta foi confirmada com sucesso. Seja Bem vindo(a)!"

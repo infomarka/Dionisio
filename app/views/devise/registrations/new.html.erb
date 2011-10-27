@@ -6,19 +6,19 @@
   <div><%= f.label :nome %><br />
   <%= f.text_field :nome %></div>
   
-  <div><%= f.label :data_nascimento, "Data de Nascimento" %><br />
+  <div><%= f.label :data_nascimento %><br />
   <%= f.date_select :data_nascimento, :order => [:day, :month, :year], :start_year => data_inicio, :end_year => data_fim %></div>
 
   <div><%= f.label :email %><br />
   <%= f.email_field :email %></div>
 
-  <div><%= f.label :password, "Senha" %><br />
+  <div><%= f.label :password %><br />
   <%= f.password_field :password %></div>
 
-  <div><%= f.label :password_confirmation, "Confirme a Senha" %><br />
+  <div><%= f.label :password_confirmation%><br />
   <%= f.password_field :password_confirmation %></div>
 
-  <div><%= f.submit "Cadastrar" %></div>
+  <div><%= f.submit t("devise.sign_up") %></div>
 <% end %>
 
 <%= render :partial => "devise/shared/links" %>

@@ -24,10 +24,6 @@ Dionisio::Application.configure do
   # Disable request forgery protection in test environment
   config.action_controller.allow_forgery_protection    = false
 
-  # Tell Action Mailer not to deliver emails to the real world.
-  # The :test delivery method accumulates sent emails in the
-  # ActionMailer::Base.deliveries array.
-  config.action_mailer.delivery_method = :test
 
   # Use SQL instead of Active Record's schema dumper when creating the test database.
   # This is necessary if your schema can't be completely dumped by the schema dumper,
@@ -39,4 +35,21 @@ Dionisio::Application.configure do
 
   # Allow pass debug_assets=true as a query parameter to load pages with unpackaged assets
   config.assets.allow_debugging = true
+
+  # Tell Action Mailer not to deliver emails to the real world.
+  # The :test delivery method accumulates sent emails in the
+  # ActionMailer::Base.deliveries array.
+  config.action_mailer.delivery_method = :test
+
+  #  config.action_mailer.delivery_method = :smtp
+  #  config.action_mailer.smtp_settings = {
+  #    :address              => "smtp.gmail.com",
+  #    :port                 => 587,
+  #    :domain               => 'baci.lindsaar.net',
+  #    :user_name            =>  'dionisio.curticao@gmail.com',
+  #    :password             => 'inf0marka',
+  #    :authentication       => 'plain',
+  #    :enable_starttls_auto => true  }
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
 end
