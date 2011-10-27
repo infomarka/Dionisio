@@ -1,6 +1,11 @@
-<%= form_for @email, :url => create_email_path do |f|%>
-<%= f.label :email, 'Email:' %>
-<br/>
-<%= f.text_field :email %>
-<%= f.submit 'Enviar' %>
-<%end%>
+<div class="texto">
+  <h1>Em breve o maior site de divulgação de eventos do Rio de Janeiro!</h1>
+</div>
+<div class="email">
+  <%= form_for @email, :url => create_email_path do |f|%>
+    <%= f.label :email, 'Email:' %>
+    <%= f.text_field :email %>
+    <%= f.submit 'Enviar' %>
+  <%end%>
+</div>
+

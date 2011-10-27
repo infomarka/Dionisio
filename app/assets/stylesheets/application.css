@@ -4,3 +4,50 @@
 .alert{
     color:#AA3333;
 }
+
+.content{
+    margin: 0 auto;
+    width: 800px;
+    border-color: black;
+    border-style: solid;
+}
+
+.header{
+    border-color: black;
+    border-style: solid;
+    padding: 5px;
+    margin: 10px;
+    
+}
+
+.titulo{
+    width: 500px;
+    margin:0 auto;
+    font-size: 4em;
+    text-align: center;
+    font-family: "times new roman";
+    font-weight: bold;
+
+}
+
+
+.main{
+    border-color: black;
+    border-style: solid;
+    padding: 10px;
+    margin: 10px;
+}
+
+.main h1{
+    text-align: center;
+}
+
+
+.footer{
+    border-color: black;
+    border-style: solid;
+    padding: 20px;
+    margin: 10px;
+}
+
+
