@@ -11,6 +11,10 @@
 
 RailsAdmin.config do |config|
 
+  config.authorize_with do
+    redirect_to root_path unless current_user.admin?
+  end
+  
   config.current_user_method { current_user } # auto-generated
   
   # Set the admin name here (optional second array element will appear in a beautiful RailsAdmin red ©)
@@ -30,7 +34,7 @@ RailsAdmin.config do |config|
   #   end
   # end
   # Example Custom Warden
-  # RailsAdmin.config do |config|
+  #   RailsAdmin.config do |config|
   #   config.authenticate_with do
   #     warden.authenticate! :scope => :paranoid
   #   end
@@ -123,20 +127,20 @@ RailsAdmin.config do |config|
   #   end
   # end
 
-# fields configuration is described in the Readme, if you have other question, ask us on the mailing-list!
+  # fields configuration is described in the Readme, if you have other question, ask us on the mailing-list!
 
-#  ==> Your models configuration, to help you get started!
+  #  ==> Your models configuration, to help you get started!
 
 
-# All fields marked as 'hidden' won't be shown anywhere in the rails_admin unless you mark them as visible.
-# There can be different reasons for that:
-#  - belongs_to _id and _type (polymorphic) columns are hidden in favor of their associations
-#  - associations are hidden if they have no matchable model found (model not included or non-existant)
-#  - they are part of a bigger plan in a plugin (Devise/Paperclip) and hidden by contract
-# Some fields may be hidden depending on the section, if they aren't deemed suitable for display or edition on that section
-#  - non-editable columns (:id, :created_at, ..) in edit sections
-#  - has_many/has_one associations in list section (hidden by default for performance reasons)
-# Fields may also be marked as read_only (and thus not editable) if they are not mass-assignable by current_user
+  # All fields marked as 'hidden' won't be shown anywhere in the rails_admin unless you mark them as visible.
+  # There can be different reasons for that:
+  #  - belongs_to _id and _type (polymorphic) columns are hidden in favor of their associations
+  #  - associations are hidden if they have no matchable model found (model not included or non-existant)
+  #  - they are part of a bigger plan in a plugin (Devise/Paperclip) and hidden by contract
+  # Some fields may be hidden depending on the section, if they aren't deemed suitable for display or edition on that section
+  #  - non-editable columns (:id, :created_at, ..) in edit sections
+  #  - has_many/has_one associations in list section (hidden by default for performance reasons)
+  # Fields may also be marked as read_only (and thus not editable) if they are not mass-assignable by current_user
 
   # config.model ListaEmail do
   #   # Found associations:
@@ -161,15 +165,15 @@ RailsAdmin.config do |config|
   #  end
 
 
-# All fields marked as 'hidden' won't be shown anywhere in the rails_admin unless you mark them as visible.
-# There can be different reasons for that:
-#  - belongs_to _id and _type (polymorphic) columns are hidden in favor of their associations
-#  - associations are hidden if they have no matchable model found (model not included or non-existant)
-#  - they are part of a bigger plan in a plugin (Devise/Paperclip) and hidden by contract
-# Some fields may be hidden depending on the section, if they aren't deemed suitable for display or edition on that section
-#  - non-editable columns (:id, :created_at, ..) in edit sections
-#  - has_many/has_one associations in list section (hidden by default for performance reasons)
-# Fields may also be marked as read_only (and thus not editable) if they are not mass-assignable by current_user
+  # All fields marked as 'hidden' won't be shown anywhere in the rails_admin unless you mark them as visible.
+  # There can be different reasons for that:
+  #  - belongs_to _id and _type (polymorphic) columns are hidden in favor of their associations
+  #  - associations are hidden if they have no matchable model found (model not included or non-existant)
+  #  - they are part of a bigger plan in a plugin (Devise/Paperclip) and hidden by contract
+  # Some fields may be hidden depending on the section, if they aren't deemed suitable for display or edition on that section
+  #  - non-editable columns (:id, :created_at, ..) in edit sections
+  #  - has_many/has_one associations in list section (hidden by default for performance reasons)
+  # Fields may also be marked as read_only (and thus not editable) if they are not mass-assignable by current_user
 
   # config.model User do
   #   # Found associations:
