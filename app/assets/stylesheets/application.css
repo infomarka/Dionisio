@@ -1,3 +1,10 @@
+body{
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: black;
+/*    background-image:url('/images/layoutnovo2.jpg');*/
+}
+
 .notice{
     color:#33AA33;
 }
@@ -8,8 +15,10 @@
 .content{
     margin: 0 auto;
     width: 800px;
+    min-height: 600px;
     border-color: black;
     border-style: solid;
+    background-color: white;
 }
 
 .header{
@@ -17,7 +26,7 @@
     border-style: solid;
     padding: 5px;
     margin: 10px;
-    
+
 }
 
 .titulo{
@@ -36,6 +45,7 @@
     border-style: solid;
     padding: 10px;
     margin: 10px;
+    min-height: 400px;
 }
 
 .main h1{
