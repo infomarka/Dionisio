@@ -149,3 +149,15 @@ Então /^mostre-me a página$/ do
   Then %{show me the page}
 end
 
+Então /^pare$/ do
+  breakpoint
+  1
+end
+
+Dado /^que eu estou logado com "([^"]*)" e senha "([^"]*)"$/ do |user, password|
+  Dado %{que eu estou na página de login}
+  E %{eu preencho "user_email" com "#{user}"}
+  E %{eu preencho "user_password" com "#{password}"}
+  Então %{eu aperto "Enviar"}
+  E %{eu devo estar na página principal}
+end

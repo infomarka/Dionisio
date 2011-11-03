@@ -3,11 +3,10 @@
 # Source: http://github.com/aslakhellesoy/cucumber/blob/master/examples/i18n/pt/features/adicao.feature
 # Updated: Tue May 25 15:52:12 +0200 2010
 Funcionalidade: Gerenciar Usuário
-  
 
   Cenário: Abrir página de cadastro
     Dado que eu estou na página principal
-    E eu clico "cadastrar"
+    E eu clico "Cadastrar"
     Então eu devo estar na página de cadastro
 
   Cenário: Cadastrar Usuário
@@ -22,3 +21,15 @@ Funcionalidade: Gerenciar Usuário
     Então eu aperto "Cadastrar"
     E eu devo estar na página principal
     E eu devo ver "Você foi cadastrado com sucesso."
+
+
+  Cenário: Logar como Administrador
+    Dado que eu estou logado com "gadf2009@gmail.com" e senha "123456"
+    Dado que eu estou na página de admin
+    Então eu devo estar na página de admin
+
+  Cenário: Usuário comum não entra na página de administrador
+    Dado que eu estou logado com "fulano@gmail.com" e senha "123456"
+    Dado que eu estou na página de admin
+    Então eu devo estar na página principal
+

@@ -2,9 +2,9 @@ require 'spork'
 
 Spork.prefork do
   ENV["RAILS_ENV"] ||= "test"
-#  require File.expand_path(File.dirname(__FILE__) + '/../../config/environment')
-#  require 'cucumber/formatter/unicode' # Remove this line if you don't want Cucumber Unicode support
-#  require 'cucumber/rails/rspec'
+  #  require File.expand_path(File.dirname(__FILE__) + '/../../config/environment')
+  #  require 'cucumber/formatter/unicode' # Remove this line if you don't want Cucumber Unicode support
+  #  require 'cucumber/rails/rspec'
   # IMPORTANT: This file is genera
   # ted by cucumber-rails - edit at your own peril.
   # It is recommended to regenerate this file in the future when you upgrade to a
@@ -56,5 +56,11 @@ Spork.prefork do
   #     DatabaseCleaner.strategy = :transaction
   #   end
   #
+  Before do
+    Fixtures.reset_cache
+    fixtures_folder = File.join(Rails.root, 'spec', 'fixtures')
+    fixtures = Dir[File.join(fixtures_folder, '*.yml')].map {|f| File.basename(f, '.yml') }
+    Fixtures.create_fixtures(fixtures_folder, fixtures)
+  end
 
 end
