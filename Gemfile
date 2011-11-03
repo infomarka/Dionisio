@@ -3,6 +3,8 @@ source 'http://rubygems.org'
 gem 'rails', '3.1.0'
 gem 'therubyracer'
 gem 'devise'
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
