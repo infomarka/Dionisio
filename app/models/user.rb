@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 class User < ActiveRecord::Base
+  has_many :eventos
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,

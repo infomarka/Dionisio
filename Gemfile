@@ -9,7 +9,7 @@ gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-
+gem 'gravatar_image_tag'
 
 # Gems used only for assets and not required
 # in production environments by default.

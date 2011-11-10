@@ -1,0 +1,21 @@
+<h3>Criar Evento</h3>
+<%= form_for @evento, :url => create_evento_path do |f| %>
+
+  <div><%= f.label :titulo %><br />
+    <%= f.text_field :titulo %></div>
+
+  <div><%= f.label :local %><br />
+    <%= f.text_field :local %></div>
+
+  <div><%= f.label :data_inicio %><br />
+    <%= f.text_field :data_inicio %></div>
+
+  <div><%= f.label :data_fim %><br />
+    <%= f.text_field :data_fim %></div>
+
+  <div><%= f.label :descricao %><br />
+    <%= f.text_area :descricao %></div>
+
+  <div><%= f.submit t("evento.new") %></div>
+
+<%end%>

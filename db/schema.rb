@@ -11,7 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111103192213) do
+ActiveRecord::Schema.define(:version => 20111110190413) do
+
+  create_table "eventos", :force => true do |t|
+    t.string   "titulo"
+    t.text     "descricao"
+    t.datetime "data_inicio"
+    t.datetime "data_fim"
+    t.string   "local"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "eventos", ["user_id"], :name => "index_eventos_on_user_id"
 
   create_table "lista_emails", :force => true do |t|
     t.string   "email"
