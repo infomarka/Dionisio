@@ -12,7 +12,7 @@
 RailsAdmin.config do |config|
 
   config.authorize_with do
-    redirect_to root_path unless current_user.admin?
+    redirect_to "/" unless current_user.admin?
   end
   
   config.current_user_method { current_user } # auto-generated

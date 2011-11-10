@@ -22,7 +22,6 @@ Funcionalidade: Gerenciar Usuário
     E eu devo estar na página principal
     E eu devo ver "Você foi cadastrado com sucesso."
 
-
   Cenário: Logar como Administrador
     Dado que eu estou logado com "gadf2009@gmail.com" e senha "123456"
     Dado que eu estou na página de admin
