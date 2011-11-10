@@ -27,3 +27,18 @@ user2:
   created_at: "2011-11-03 19:33:10"
   updated_at: "2011-11-03 20:07:18"
   tipo: 0
+
+user3:
+  id: 3
+  email: "promoter@gmail.com"
+  encrypted_password: "$2a$10$ayJ5XbDzRIz9zeS.c46EGeHntwi1f09H.DD28cjyh6p4DzRqComi6"
+  sign_in_count: 1
+  current_sign_in_at: "2011-11-03 20:07:18"
+  last_sign_in_at: "2011-11-03 20:07:18"
+  current_sign_in_ip: "127.0.0.1"
+  last_sign_in_ip: "127.0.0.1"
+  nome: "Promoter"
+  data_nascimento: "1991-12-02"
+  created_at: "2011-11-03 19:33:10"
+  updated_at: "2011-11-03 20:07:18"
+  tipo: 1

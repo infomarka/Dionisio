@@ -7,7 +7,7 @@ class User < ActiveRecord::Base
     :recoverable, :rememberable, :trackable, :validatable
   
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :nome, :data_nascimento, :tipo
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :nome, :data_nascimento, :tipo, :promoter?
   validates :nome , :presence => true
   validate :validar_idade
 
@@ -17,6 +17,10 @@ class User < ActiveRecord::Base
 
   def admin?
     self.tipo == 2
+  end
+
+  def promoter?
+    self.tipo >= 1
   end
 
 end

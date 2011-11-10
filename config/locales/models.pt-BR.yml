@@ -25,3 +25,13 @@ pt-BR:
               blank: não pode ficar em branco.
             data_nascimento:
               menor: inválida. Você é menor de idade!
+        evento:
+          attributes:
+            titulo:
+              blank: não pode ficar em branco.
+            data_inicio:
+              blank: não pode ficar em branco.
+            local:
+              blank: não pode ficar em branco.
+            user:
+              promoter: deve ser promoter.
